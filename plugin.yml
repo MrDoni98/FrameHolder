@@ -1,0 +1,8 @@
+name: FrameHolder
+main: FrameHolder\Loader
+version: 1.0.0
+api: [1.0.0]
+load: STARTUP
+author: Gamecrafter
+description: Liquids won't spread in your server!
+website: https://github.com/Gamecrafter/FrameHolder
