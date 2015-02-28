@@ -7,11 +7,13 @@ use pocketmine\block\Water;
 use pocketmine\event\block\BlockSpreadEvent;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
 
 class Loader extends PluginBase implements Listener{
     
     public function onEnable(){
+        $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getLogger()->info(TextFormat::GREEN."FrameHolder enabled.");
     }
@@ -22,11 +24,13 @@ class Loader extends PluginBase implements Listener{
     
     public function onBlockSpread(BlockSpreadEvent $event){
         $block = $event->getBlock();
-        if($block instanceof Lava){
-        
+        if($block instanceof Lava && $this->getConfig()->get("spread-lava") === true{
+            $event->setCancelled();
+            return true;
         }
-        elseif($block instanceof Water){
-        
+        if($block instanceof Water && $this->getConfig()->get("spread-water") === true){
+            $event->setCancelled();
+            return true;
         }
     }
 }
