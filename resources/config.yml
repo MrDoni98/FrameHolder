@@ -1,3 +1,4 @@
+#Config file for FrameHolder by Gamecrafter;
 spread-lava: true
 #Enable lava spreading on place
 spread-water: true
