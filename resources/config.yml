@@ -1,0 +1,4 @@
+spread-lava: true
+#Enable lava spreading on place
+spread-water: true
+#Enable water spreading on place
