@@ -24,7 +24,7 @@ class Loader extends PluginBase implements Listener{
     
     public function onBlockSpread(BlockSpreadEvent $event){
         $block = $event->getBlock();
-        if($block instanceof Lava && $this->getConfig()->get("spread-lava") === false{
+        if($block instanceof Lava && $this->getConfig()->get("spread-lava") === false){
             $event->setCancelled();
             return true;
         }
