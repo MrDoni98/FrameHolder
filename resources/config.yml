@@ -1,5 +1,5 @@
-#Config file for FrameHolder by Gamecrafter;
+#Настройки от FrameHolder;
 spread-lava: false
-#Enable lava spreading on place
+#false - запретить лаву , true - разрешить лаву
 spread-water: false
-#Enable water spreading on place
+#false - запретить воду , true - разрешить воду
