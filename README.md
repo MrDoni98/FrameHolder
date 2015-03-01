@@ -1,2 +1,2 @@
 # FrameHolder
-Block holder plugin for PocketMine-MP.
+Запрещает жидкостям течь на сервере PocketMine-MP.
