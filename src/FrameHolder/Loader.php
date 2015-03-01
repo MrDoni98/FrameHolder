@@ -15,11 +15,11 @@ class Loader extends PluginBase implements Listener{
     public function onEnable(){
         $this->saveDefaultConfig();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        $this->getLogger()->info(TextFormat::GREEN."FrameHolder enabled.");
+        $this->getLogger()->info(TextFormat::GREEN."FrameHolder включён.");
     }
     
     public function onDisable(){
-        $this->getLogger()->info(TextFormat::RED."FrameHolder disabled.");
+        $this->getLogger()->info(TextFormat::RED."FrameHolder выключен.");
     }
     
     public function onBlockSpread(BlockSpreadEvent $event){
